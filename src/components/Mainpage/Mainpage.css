@@ -1,0 +1,94 @@
+.back-photo{
+    background: no-repeat center 100% url('./efoodBackground.jpg');
+    min-height: 200px;
+    background-size: cover;
+    background-position: 50%;
+}
+.back-photo > h6{
+    position: relative;
+    top: 7rem;
+    color: white;
+    font-size: xx-large;
+}
+
+.nav-list{
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    justify-content: space-between;
+    box-sizing: border-box;
+    color: white;
+    padding-top: .5rem;
+}
+.main-content-flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+.left-nav , .left-nav-2{
+    display: grid;
+    list-style-type: none;
+    gap: 5px;
+}
+.left-nav > li{
+    flex: 1;
+}
+
+.shop-options , .shop-options-2{
+    position: relative;
+    display: grid;
+    right: 10rem;
+    border: 2px solid white;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 13%);
+    min-width: 15em;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+.shop-options > h6 {
+    position: relative;
+    right: 1rem;
+    cursor: pointer;
+}
+.shop-options-2{
+    margin-top: 2rem;
+}
+label{
+    margin-left: 1rem;
+    cursor: pointer;
+}
+input{
+    cursor: pointer;
+}
+.search{
+    min-width: 40em;
+    border-radius: 5px;
+    min-height: 3rem;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 13%);
+}
+.flex-logo-images{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.flex-logo-images > img{
+    max-width: 150px;
+    max-height: 150px;
+    padding: 2rem;
+    flex-basis: 100%;
+}
+.options-for-delivery{
+    display: grid;
+    gap: 2rem;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 13%);
+}
+.options-for-delivery > *{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+}
+@media (max-width : 1000px) {
+    .need-to-hide-it{
+        display: none;
+    }    
+    .nav-list{
+        display:none;
+    }
+}
